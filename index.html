@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>chechobarber</title>
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="preload" href="css/Inicio.css" as="style">
+    <link href="css/Inicio.css" rel="stylesheet">
+    <link rel="preload" href="css/registro.css" as="style">
+    <link href="css/registro.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="Img/checho.jpg" width="100" height="100">
+       
+    </header>
+
+
+
+    <!---------------------------------------------------------------------------- ESTILO inicio--------------------------------------------------------------->
+
+   
+
+
+    <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+            title="Close Modal">&times;</span>
+
+        <form class="modal-content animate" action="/action_page.php">
+            <div class="imgcontainer">
+                <img src="Img/checho.jpg" alt="Avatar" class="avatar">
+
+                <label for="text"><b><center>Usuario</center></b></label>
+                <input type="text" placeholder="Ingresar Usuario" name="psw" required>
+                <label for="psw"><b>Contraseña</b></label>
+                <input type="password" placeholder="Ingresar contraseña" name="psw" required>
+
+                <button type="submit">Inciar</button>
+
+                <label> <br>
+                    <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+            </div>
+
+            <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                    class="cancelbtn">Cancelar</button>
+                <span class="psw">Olvidaste <a href="#">tu contraseña?</a></span>
+            </div>
+        </form>
+    </div>
+
+
+    <!---------------------------------------------------------------------------- ESTILO Registro--------------------------------------------------------------->
+    
+
+    <div id="id02" class="modal2">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close2"
+            title="Close Modal">&times;</span>
+
+        <form class="modal-content animate" action="/action_page.php">
+            <form class="modal-content2" action="/action_page.php">
+                <div class="container2">
+                    <h1>Registro</h1>
+                    <p>Rellene este formulario para crear una cuenta.</p>
+                    <hr>
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Ingresar Email" name="email" required>
+
+                    <label for="psw"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Ingresar contraseña" name="psw" required>
+
+                    <label for="psw-repeat"><b>Repite contraseña</b></label>
+                    <input type="password" placeholder="Repite contraseña" name="psw-repeat" required>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+                    </label>
+
+                    <p>Al crear una cuenta, usted acepta nuestros <a href="#" style="color:dodgerblue">Terminos y
+                            privacidad</a>.</p>
+
+                    <div class="clearfix2">
+                        <button type="button" onclick="document.getElementById('id02').style.display='none'"
+                            class="cancelbtn2">Cancelar</button>
+                        <button type="submit" class="signupbtn2">Crear cuenta</button>
+                    </div>
+                </div>
+            </form>
+    </div>
+
+
+    <!---------------------------------------------------------------------------- CLASES NAVEGACION--------------------------------------------------------------->
+    <div>
+        <div class="nav-bg">
+
+            <nav class="navegacion-principal contenedor">
+                <a href="#">Inicio</a>
+                <a href="#">Servicios</a>
+                <a href="#">Cortes</a>
+                <a href="#">Agendar cita</a>
+                <a href="#">Listar</a>
+                <div class="boton1">
+                    <button onclick="document.getElementById('id01').style.display='block'">Inicio</button>
+                </div> 
+
+                <div>
+                    <button onclick="document.getElementById('id02').style.display='block'"> Registro</button>
+                </div>
+            </nav>
+        </div>
+         
+
+    </div>
+        
+    
+
+        <section class="hero">
+
+            <div class="contenido-hero">
+                <h2>Checho<span>Barber</span></h2>
+
+
+                <p>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="44"
+                        height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#2c3e50" fill="none"
+                        stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <circle cx="12" cy="11" r="3" />
+                        <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                    Medellin, Colombia
+                </p>
+
+                <a class="boton" href="#">Contactar</a>
+            </div> <!-- .contenido-hero -->
+
+
+            <!---------------------------------------------------------------------------- CLASES SERVICIOS--------------------------------------------------------------->
+        </section>
+        <a href="html/Servicios.html"></a>
+        <main class="contenedor sombra">
+            <h3>Servicios</h3>
+            <div class="servicios">
+                <section>
+                    <h3>Cortes Generales</h3>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicingnostrum dolores illum inventore sequi ipsa
+                        commodi eveniet?</p>
+                </section>
+
+                <section>
+                    <h3>Barba y cejas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae facilis eius deleniti nobis repellendus magnam hic inventore corrupti assumenda exercitationem, illum natus omnis itaque numquam dolorem maiores reprehenderit esse similique?</p>
+                </section>
+
+                <section>
+                    <h3>E-Comerc</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, dolore. Cum, dolores voluptates quaerat iusto optio, consectetur sed, mollitia fugit aspernatur adipisci vero recusandae! Architecto recusandae possimus natus cum cupiditate.</p>
+                </section>
+            </div>
+        </main>
+
+
+        <!---------------------------------------------------------------------------- CONTACTO--------------------------------------------------------------->
+        <section>
+            <h2>Contacto</h2>
+            <form>
+                <fieldset>
+                    <legend>Contactanos llenando los Datos</legend>
+
+                    <div>
+                        <label>Nombre</label>
+                        <input type="text" placeholder="Tu Nombre">
+                    </div>
+
+                    <div>
+                        <label>Telefono</label>
+                        <input type="tel" placeholder="Tu Telefono">
+                    </div>
+
+                    <div>
+                        <label>Correo</label>
+                        <input type="email" placeholder="Tu Email">
+                    </div>
+
+                    <div>
+                        <label>Mensaje</label>
+                        <textarea></textarea>
+                    </div>
+
+
+                    <div>
+
+                        <input type="submit" value="Enviar">
+                    </div>
+
+                </fieldset>
+            </form>
+        </section>
+
+        <footer>
+            <p>Todos los Derechos Reservados. Hugo Berrio</p>
+        </footer>
+
+
+
+</html>
